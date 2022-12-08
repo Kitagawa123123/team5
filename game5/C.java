@@ -14,6 +14,15 @@ public class C extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+      setRotation(180);
+      move(3);
+      Actor C = getOneIntersectingObject( B.class );
+if( C != null ){
+    
+    System.out.println("GAVE OVER");
+     getWorld().removeObject( B );
+    // TARO とぶつかった時の処理を書く
+}
+
+    }
 }

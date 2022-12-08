@@ -16,11 +16,11 @@ public class C extends Actor
     {
       setRotation(180);
       move(3);
-      Actor C = getOneIntersectingObject( B.class );
-if( C != null ){
+      Actor actor = getOneIntersectingObject( A.class );
+if( actor != null ){
     
     System.out.println("GAVE OVER");
-     getWorld().removeObject( B );
+     getWorld().removeObject(actor);
     // TARO とぶつかった時の処理を書く
 }
 

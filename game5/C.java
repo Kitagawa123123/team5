@@ -14,13 +14,17 @@ public class C extends Actor
      */
     public void act() 
     {
-      setRotation(180);
-      move(3);
-      Actor actor = getOneIntersectingObject( A.class );
+      
+      
+        
+      move(-5);
+      
+      Actor actor = getOneIntersectingObject( B.class );
+      
 if( actor != null ){
-    
-    System.out.println("GAVE OVER");
+    getWorld().showText( "GAME OVER", 800, 500 );
      getWorld().removeObject(actor);
+     Greenfoot.stop();
     // TARO とぶつかった時の処理を書く
 }
 

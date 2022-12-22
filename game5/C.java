@@ -14,6 +14,19 @@ public class C extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+      
+      
+        
+      move(-5);
+      
+      Actor actor = getOneIntersectingObject( B.class );
+      
+if( actor != null ){
+    getWorld().showText( "GAME OVER", 800, 500 );
+     getWorld().removeObject(actor);
+     Greenfoot.stop();
+    // TARO とぶつかった時の処理を書く
+}
+
+    }
 }

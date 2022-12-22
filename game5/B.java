@@ -26,12 +26,14 @@ public class B extends Actor
         if( Greenfoot.isKeyDown( "left" ) ){
         setRotation(180);
         move(2);}
+    }
+}
         
-        if(){
+        /*if(){
             getWorld().removeObject( actor );
             Greenfoot.stop();
-        }//画面外に戦闘機が行った時のゲームオーバー処理
+        //}//画面外に戦闘機が行った時のゲームオーバー処理
         
 }// Add your action code here.
-    }    
+    }*/    
 

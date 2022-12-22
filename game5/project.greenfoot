@@ -3,7 +3,6 @@ class.A.image=man.png
 class.B.image=airplane.png
 class.C.image=bomb.png
 class.MyWorld.image=sky_00031.jpg
-<<<<<<< HEAD
 dependency1.from=MyWorld
 dependency1.to=B
 dependency1.type=UsesDependency
@@ -12,18 +11,10 @@ dependency2.to=B
 dependency2.type=UsesDependency
 editor.fx.0.height=739
 editor.fx.0.width=816
-editor.fx.0.x=3
-editor.fx.0.y=225
-height=1028
+editor.fx.0.x=976
+editor.fx.0.y=321
+height=1100
 package.numDependencies=2
-=======
-editor.fx.0.height=739
-editor.fx.0.width=816
-editor.fx.0.x=552
-editor.fx.0.y=100
-height=951
-package.numDependencies=0
->>>>>>> ddbf1c04f0e99bde738908932a39535273548d83
 package.numTargets=4
 project.charset=UTF-8
 publish.hasSource=false
@@ -68,12 +59,7 @@ target4.width=80
 target4.x=0
 target4.y=0
 version=3.0.0
-width=947
+width=1845
 world.lastInstantiated=MyWorld
-<<<<<<< HEAD
-xPosition=46
-yPosition=3
-=======
 xPosition=0
-yPosition=382
->>>>>>> ddbf1c04f0e99bde738908932a39535273548d83
+yPosition=170

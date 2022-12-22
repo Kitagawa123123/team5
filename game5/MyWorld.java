@@ -20,8 +20,8 @@ public class MyWorld extends World
         super(1600, 1000, 1);
         addObject( new B(), 100, 500 );
         
-
         
+        addObject( new C(), 300, 200 );
 
     }
 }

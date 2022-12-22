@@ -19,14 +19,19 @@ public class C extends Actor
         
       move(-5);
       
-      Actor actor = getOneIntersectingObject( B.class );
       
+      Actor actor = getOneIntersectingObject( B.class );
+       
 if( actor != null ){
     getWorld().showText( "GAME OVER", 800, 500 );
      getWorld().removeObject(actor);
      Greenfoot.stop();
     // TARO とぶつかった時の処理を書く
 }
+            setLocation(getX() - 1, getY());
+            if(getX() <= 1){
+            setLocation(getX() + 700, Greenfoot.getRandomNumber(250)+100);
 
     }
+}
 }

@@ -26,6 +26,11 @@ public class B extends Actor
         if( Greenfoot.isKeyDown( "left" ) ){
         setRotation(180);
         move(2);}
+        
+        if( isAtEdge() ){
+        getWorld().showText( "GAME OVER", 800, 500 );
+        getWorld().removeObject( this );
+}
     }
 }
         

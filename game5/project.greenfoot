@@ -1,13 +1,13 @@
 #Greenfoot project file
 class.A.image=man.png
-class.B.image=smiley2.png
-class.C.image=steel-ball.png
+class.B.image=airplane.png
+class.C.image=bomb.png
 class.MyWorld.image=sky_00031.jpg
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
-height=1185
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=552
+editor.fx.0.y=100
+height=951
 package.numDependencies=0
 package.numTargets=4
 project.charset=UTF-8
@@ -56,4 +56,4 @@ version=3.0.0
 width=1845
 world.lastInstantiated=MyWorld
 xPosition=0
-yPosition=0
+yPosition=382

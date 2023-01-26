@@ -15,21 +15,23 @@ public class B extends Actor
     public void act() 
     {
         setRotation(90);
-        move(2);
+        move(5);
         
         if( Greenfoot.isKeyDown( "right" ) ){
         setRotation(0);
         move(5);}
         if( Greenfoot.isKeyDown( "up" ) ){
         setRotation(-90);
-        move(5);}
+        move(10);}
         if( Greenfoot.isKeyDown( "left" ) ){
         setRotation(180);
-        move(2);}
+        move(10);}
         
         if( isAtEdge() ){
-        getWorld().showText( "GAME OVER", 800, 500 );
-        getWorld().removeObject( this );
+    getWorld().showText( "GAME OVER", 800, 500 );  
+    getWorld().showText( "Your Score:-1", 800, 600 );
+    Greenfoot.stop();
+    getWorld().removeObject( this );
 }
     }
 }

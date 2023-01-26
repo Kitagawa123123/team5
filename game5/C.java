@@ -14,24 +14,37 @@ public class C extends Actor
      */
     public void act() 
     {
-      
+      int i;
       
         
-      move(-5);
+      move(-10);
+      
       
       
       Actor actor = getOneIntersectingObject( B.class );
+      
        
 if( actor != null ){
     getWorld().showText( "GAME OVER", 800, 500 );
-     getWorld().removeObject(actor);
      Greenfoot.stop();
+    getWorld().removeObject(actor);
+
+    
+    MyWorld myworld = (MyWorld) getWorld();
+    int timer = myworld.timer;
+    getWorld().showText( "Your Score: "+(5000-timer), 800, 600 );
+    
+    
+     
     // TARO とぶつかった時の処理を書く
 }
-            setLocation(getX() - 1, getY());
-            if(getX() <= 1){
-            setLocation(getX() + 700, Greenfoot.getRandomNumber(250)+100);
+    setLocation(getX() - 1, getY());
+         if(getX() <= 1){
+            setLocation(getX() + 1600, Greenfoot.getRandomNumber(900)+200);
+}
+}
+        }
+    
+            
 
-    }
-}
-}
+

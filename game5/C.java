@@ -17,7 +17,7 @@ public class C extends Actor
       int i;
       
         
-      move(-10);
+      move(-12);
       
       
       
@@ -40,7 +40,7 @@ if( actor != null ){
 }
     setLocation(getX() - 1, getY());
          if(getX() <= 1){
-            setLocation(getX() + 1600, Greenfoot.getRandomNumber(900)+200);
+            setLocation(getX() + 1600, Greenfoot.getRandomNumber(900)+100);
 }
 }
         }
